@@ -1,0 +1,19 @@
+# Raw and enterprise-level data must not be public
+data/raw/
+data/processed/
+data/analysis.sqlite
+*.xlsx
+outputs/scored_candidates.csv
+_test_*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
