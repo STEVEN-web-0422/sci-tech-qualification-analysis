@@ -1,0 +1,182 @@
+{
+  "n_high_tech": 29323,
+  "performance": [
+    {
+      "target": "any_stacking",
+      "target_label": "获得任一叠加资质",
+      "model": "base",
+      "n": 29323,
+      "positives": 5911,
+      "prevalence_pct": 20.158237560958973,
+      "roc_auc": 0.8152357960351744,
+      "auc_ci_low": 0.8097917592171969,
+      "auc_ci_high": 0.8207781460172134,
+      "pr_auc": 0.4954029711381739,
+      "brier": 0.12837531161421745,
+      "top_decile_precision_pct": 55.320600272851294,
+      "top_decile_capture_pct": 27.44036542040264,
+      "top_decile_lift": 2.744317309762846
+    },
+    {
+      "target": "any_stacking",
+      "target_label": "获得任一叠加资质",
+      "model": "full",
+      "n": 29323,
+      "positives": 5911,
+      "prevalence_pct": 20.158237560958973,
+      "roc_auc": 0.8442216067753457,
+      "auc_ci_low": 0.8389877130993503,
+      "auc_ci_high": 0.8498316984190611,
+      "pr_auc": 0.5374010330883927,
+      "brier": 0.12049723453119233,
+      "top_decile_precision_pct": 61.97135061391542,
+      "top_decile_capture_pct": 30.739299610894943,
+      "top_decile_lift": 3.074244483254681
+    },
+    {
+      "target": "small_giant",
+      "target_label": "获得科技小巨人",
+      "model": "base",
+      "n": 29323,
+      "positives": 1456,
+      "prevalence_pct": 4.965385533540225,
+      "roc_auc": 0.8574657951407331,
+      "auc_ci_low": 0.8483334212933825,
+      "auc_ci_high": 0.8661511446052178,
+      "pr_auc": 0.23968534240507433,
+      "brier": 0.04176077732782394,
+      "top_decile_precision_pct": 23.53342428376535,
+      "top_decile_capture_pct": 47.39010989010989,
+      "top_decile_lift": 4.739495880994857
+    },
+    {
+      "target": "small_giant",
+      "target_label": "获得科技小巨人",
+      "model": "full",
+      "n": 29323,
+      "positives": 1456,
+      "prevalence_pct": 4.965385533540225,
+      "roc_auc": 0.879064390233515,
+      "auc_ci_low": 0.8707580885157886,
+      "auc_ci_high": 0.887214040542549,
+      "pr_auc": 0.27680963941399234,
+      "brier": 0.04062299764645833,
+      "top_decile_precision_pct": 27.216916780354705,
+      "top_decile_capture_pct": 54.807692307692314,
+      "top_decile_lift": 5.481330018889705
+    },
+    {
+      "target": "specialized",
+      "target_label": "获得专精特新",
+      "model": "base",
+      "n": 29323,
+      "positives": 5657,
+      "prevalence_pct": 19.29202332639907,
+      "roc_auc": 0.8101982601217361,
+      "auc_ci_low": 0.8048693387051395,
+      "auc_ci_high": 0.8156495266579419,
+      "pr_auc": 0.4740040751714559,
+      "brier": 0.1263095347985142,
+      "top_decile_precision_pct": 52.72851296043656,
+      "top_decile_capture_pct": 27.328972953862475,
+      "top_decile_lift": 2.7331769233496224
+    },
+    {
+      "target": "specialized",
+      "target_label": "获得专精特新",
+      "model": "full",
+      "n": 29323,
+      "positives": 5657,
+      "prevalence_pct": 19.29202332639907,
+      "roc_auc": 0.8386954962961135,
+      "auc_ci_low": 0.8333058244297481,
+      "auc_ci_high": 0.8445219196913706,
+      "pr_auc": 0.5138382576377735,
+      "brier": 0.11925033725803008,
+      "top_decile_precision_pct": 59.6862210095498,
+      "top_decile_capture_pct": 30.9351246243592,
+      "top_decile_lift": 3.093828988267684
+    }
+  ],
+  "comparison": [
+    {
+      "target": "any_stacking",
+      "target_label": "获得任一叠加资质",
+      "base_auc": 0.8152357960351744,
+      "full_auc": 0.8442216067753457,
+      "delta_auc": 0.02898581074017137,
+      "delta_ci_low": 0.025875720832880023,
+      "delta_ci_high": 0.03220273313177112
+    },
+    {
+      "target": "small_giant",
+      "target_label": "获得科技小巨人",
+      "base_auc": 0.8574657951407331,
+      "full_auc": 0.879064390233515,
+      "delta_auc": 0.021598595092781947,
+      "delta_ci_low": 0.017143746994283535,
+      "delta_ci_high": 0.02572802753502306
+    },
+    {
+      "target": "specialized",
+      "target_label": "获得专精特新",
+      "base_auc": 0.8101982601217361,
+      "full_auc": 0.8386954962961135,
+      "delta_auc": 0.028497236174377383,
+      "delta_ci_low": 0.02533281464269513,
+      "delta_ci_high": 0.03184381042484398
+    }
+  ],
+  "importance": [
+    {
+      "group": "规模",
+      "auc_drop_mean": 0.13190226520448917,
+      "auc_drop_std": 0.003566127998777452
+    },
+    {
+      "group": "专利",
+      "auc_drop_mean": 0.09650115097521264,
+      "auc_drop_std": 0.004038197935362296
+    },
+    {
+      "group": "著作权",
+      "auc_drop_mean": 0.014204743152411136,
+      "auc_drop_std": 0.0015678690549608637
+    },
+    {
+      "group": "企业类型",
+      "auc_drop_mean": 0.013772842910581663,
+      "auc_drop_std": 0.001839895209071953
+    },
+    {
+      "group": "知产密度",
+      "auc_drop_mean": 0.01167684315916775,
+      "auc_drop_std": 0.001107256007732152
+    },
+    {
+      "group": "注册资本",
+      "auc_drop_mean": 0.009563897641792584,
+      "auc_drop_std": 0.0011306236815105382
+    },
+    {
+      "group": "企业年龄",
+      "auc_drop_mean": 0.00776049237386337,
+      "auc_drop_std": 0.0009966042911939447
+    },
+    {
+      "group": "行业",
+      "auc_drop_mean": 0.006566086861322584,
+      "auc_drop_std": 0.001085170137298019
+    },
+    {
+      "group": "区县",
+      "auc_drop_mean": 0.0041764086755095905,
+      "auc_drop_std": 0.0009904556263402632
+    },
+    {
+      "group": "实缴率",
+      "auc_drop_mean": 0.002290316018662808,
+      "auc_drop_std": 0.00045589446607696216
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿field,required,description
+credit_code,否,企业标识，可用于回填结果
+insured_count,建议,参保人数；缺失时模型使用中位数和缺失指示
+registered_capital_wan,建议,注册资本，万元
+paid_in_capital_wan,否,实缴资本，万元；可用于计算实缴率
+paid_in_rate,否,实缴率；缺失时可由实缴/注册资本计算
+establishment_date,否,成立日期 YYYY-MM-DD；用于计算企业年龄
+enterprise_age,建议,企业年龄；缺失时可由成立日期计算
+patent_count,建议,专利数
+copyright_count,建议,著作权数
+ip_density,否,知产密度；缺失时可由知产总数/参保人数计算
+industry_category,建议,国标行业门类
+district,建议,所在区县
+enterprise_type,建议,企业（机构）类型
+scale_band,否,规模分档；缺失时按参保人数自动生成

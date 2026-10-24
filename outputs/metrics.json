@@ -1,0 +1,98 @@
+{
+  "analysis_date": "2026-10-17",
+  "raw_total": 62182,
+  "status_removed": 1197,
+  "active_before_dedup": 60985,
+  "duplicate_removed": 23914,
+  "clean_rows": 37071,
+  "unique_codes": 29927,
+  "cross_unique": 5913,
+  "cross_share": 19.75807798977512,
+  "raw_duplicate_rows": 24136,
+  "pools": {
+    "科技小巨人": {
+      "rows": 1460,
+      "unique_codes": 1460,
+      "cross_rows": 1458,
+      "cross_unique": 1458
+    },
+    "高新技术企业": {
+      "rows": 29344,
+      "unique_codes": 29323,
+      "cross_rows": 5911,
+      "cross_unique": 5911
+    },
+    "专精特新中小企业": {
+      "rows": 6267,
+      "unique_codes": 6259,
+      "cross_rows": 5659,
+      "cross_unique": 5659
+    }
+  },
+  "overlap": {
+    "科技小巨人|高新技术企业": {
+      "count": 1456,
+      "share_a": 99.72602739726027,
+      "share_b": 4.965385533540225
+    },
+    "科技小巨人|专精特新中小企业": {
+      "count": 1204,
+      "share_a": 82.46575342465754,
+      "share_b": 19.236299728391117
+    },
+    "高新技术企业|专精特新中小企业": {
+      "count": 5657,
+      "share_a": 19.29202332639907,
+      "share_b": 90.38185013580444
+    },
+    "小巨人+高企+专精特新|三重叠加": {
+      "count": 1202,
+      "share_a": 82.32876712328768,
+      "share_b": null
+    }
+  },
+  "paid_median": {
+    "科技小巨人": 1.0,
+    "高新技术企业": 0.81,
+    "专精特新中小企业": 1.0
+  },
+  "low_paid_share": {
+    "科技小巨人": 15.105485232067512,
+    "高新技术企业": 30.3964948811383,
+    "专精特新中小企业": 19.867549668874172
+  },
+  "ip_median": {
+    "科技小巨人": 83.0,
+    "高新技术企业": 30.0,
+    "专精特新中小企业": 54.0
+  },
+  "ip_density_median": {
+    "科技小巨人": 0.96925,
+    "高新技术企业": 1.8182,
+    "专精特新中小企业": 1.0301
+  },
+  "reg_cap_median": {
+    "科技小巨人": 4610.6235,
+    "高新技术企业": 1000.0,
+    "专精特新中小企业": 2500.0
+  },
+  "insured_median": {
+    "科技小巨人": 97.0,
+    "高新技术企业": 15.0,
+    "专精特新中小企业": 53.0
+  },
+  "age_median": {
+    "科技小巨人": 17.985,
+    "高新技术企业": 13.58,
+    "专精特新中小企业": 18.37
+  },
+  "high_tech_raw_rows": 49431,
+  "high_tech_clean_rows": 29344,
+  "max_establishment_date": "2022-12-30",
+  "max_approval_date": "2023-05-05",
+  "max_award_year": 2022,
+  "all_three": 1202,
+  "small_giant_high_share": 99.72602739726027,
+  "small_giant_specialized_share": 82.46575342465754,
+  "specialized_high_share": 90.38185013580444
+}
