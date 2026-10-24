@@ -1,0 +1,33 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  syntax-and-artifacts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Privacy preflight
+        run: python tools/preflight.py
+      - name: Compile Python scripts
+        run: python -m compileall -q analysis
+      - name: Verify public artifacts
+        run: |
+          test -f README.md
+          test -f REPORT.md
+          test -f sql/01_clean_merge.sql
+          test -f sql/02_ip_by_scale.sql
+          test -f sql/03_build_cohorts.sql
+          test -f sql/04_create_analysis_dataset.sql
+          test -f outputs/tables/direction1_effects.csv
+          test -f outputs/tables/direction2_model_performance.csv
+          test -f outputs/models/score_metadata.json
+          test -f docs/images/direction2_model_performance.png
